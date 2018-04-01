@@ -445,6 +445,7 @@ main(argc, argv)
 
 #if WITH_BOEHM_GC
 	GC_INIT();
+	GC_enable_incremental();
 #endif
 
 	/* Initialise the shell's global strings */
